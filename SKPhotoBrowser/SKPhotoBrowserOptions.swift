@@ -16,6 +16,7 @@ public struct SKPhotoBrowserOptions {
     public static var displayAction: Bool = true
     public static var shareExtraCaption: String?
     public static var actionButtonTitles: [String]?
+    public static var actionButtonColor: UIColor = .white
     
     public static var displayCounterLabel: Bool = true
     public static var displayBackAndForwardButton: Bool = true
@@ -52,6 +53,8 @@ public struct SKPhotoBrowserOptions {
 public struct SKButtonOptions {
     public static var closeButtonPadding: CGPoint = CGPoint(x: 5, y: 20)
     public static var deleteButtonPadding: CGPoint = CGPoint(x: 5, y: 20)
+
+    public static var buttonColor: UIColor?
 }
 
 public struct SKCaptionOptions {
