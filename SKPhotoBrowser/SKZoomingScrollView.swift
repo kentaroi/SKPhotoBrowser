@@ -234,7 +234,7 @@ open class SKZoomingScrollView: UIScrollView {
                 newZoom = maximumZoomScale
             }
             */
-            let zoomRect = zoomRectForScrollViewWith(maximumZoomScale, touchPoint: touchPoint)
+            let zoomRect = zoomRectForScrollViewWith(1.0/UIScreen.main.scale, touchPoint: touchPoint)
             zoom(to: zoomRect, animated: true)
         }
         
